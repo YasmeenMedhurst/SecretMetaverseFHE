@@ -1,0 +1,56 @@
+{
+  "name": "secret-metaverse",
+  "version": "1.0.0",
+  "description": "Privacy-First Virtual World with Fully Homomorphic Encryption",
+  "main": "index.js",
+  "scripts": {
+    "compile": "cross-env hardhat compile",
+    "test": "cross-env hardhat test",
+    "deploy": "cross-env hardhat run scripts/deploy.ts",
+    "deploy:testnet": "cross-env hardhat run scripts/deploy.ts --network testnet",
+    "verify": "cross-env hardhat verify",
+    "clean": "cross-env hardhat clean",
+    "coverage": "cross-env hardhat coverage",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "fhe",
+    "privacy",
+    "metaverse",
+    "blockchain",
+    "zama",
+    "solidity",
+    "hardhat"
+  ],
+  "author": "Secret Metaverse Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@fhevm/solidity": "^0.7.0",
+    "@fhevm/hardhat-plugin": "0.0.1-3",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "chai": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.24.3",
+    "hardhat-gas-reporter": "^1.0.10",
+    "solidity-coverage": "^0.8.12",
+    "ts-node": "^10.9.0",
+    "typechain": "^8.3.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
